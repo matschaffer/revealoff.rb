@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'revealoff'
+require 'revealoff/server'
+
+Revealoff::Server.run!

@@ -18,4 +18,9 @@ Gem::Specification.new do |gem|
   gem.executables   = manifest.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = manifest.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
+
+  gem.add_development_dependency 'rake'
+  gem.add_development_dependency 'rspec'
+
+  gem.add_dependency 'sinatra'
 end
