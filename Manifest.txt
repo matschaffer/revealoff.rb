@@ -1,0 +1,7 @@
+LICENSE.txt
+Manifest.txt
+README.md
+Rakefile
+lib/revealoff.rb
+lib/revealoff/version.rb
+revealoff.gemspec
