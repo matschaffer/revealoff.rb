@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Shows showoff slides using reveal.js}
   gem.homepage      = ""
 
-  manifest          = File.read_utf("Manifest.txt").split(/\r?\n\r?/) rescue []
+  manifest          = File.readlines("Manifest.txt").map(&:chomp)
 
   gem.files         = manifest
   gem.executables   = manifest.grep(%r{^bin/}).map{ |f| File.basename(f) }
